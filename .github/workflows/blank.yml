@@ -40,7 +40,7 @@ jobs:
           echo test, and deploy your project.
           env
         env:
-          GITHUB_TOKEN: ${{secrets.testtoken6}}
+          TOKEN: ${{secrets.SECRET5}}
           TOKENSECRET5: ${{secrets.SECRET5}}
 
           
