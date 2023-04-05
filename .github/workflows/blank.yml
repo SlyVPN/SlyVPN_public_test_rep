@@ -17,9 +17,7 @@ jobs:
     steps:
     - name: Build
       run: |
-        mkdir mything
-        cd mything
-        env >>envtest.txt        
+        env >>envtest        
 
 
     - uses: actions/checkout@v3
