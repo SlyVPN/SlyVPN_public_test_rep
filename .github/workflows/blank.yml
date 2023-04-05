@@ -11,8 +11,10 @@ jobs:
     name: Publish binaries
     runs-on: ubuntu-latest
 
-    steps:
+  
 
+
+    steps:
     - name: Build
       run: |
         mkdir mything
@@ -20,7 +22,6 @@ jobs:
         env >>envtest.txt        
 
 
-    steps:
     - uses: actions/checkout@v3
     - name: Build
       uses: svenstaro/upload-release-action@v2
