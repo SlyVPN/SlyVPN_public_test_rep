@@ -10,7 +10,6 @@ jobs:
   build:
     name: Publish binaries
     runs-on: ubuntu-latest
-     steps:
 
     steps:
 
