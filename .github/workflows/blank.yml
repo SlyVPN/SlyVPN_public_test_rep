@@ -1,5 +1,5 @@
 name: Publish
-
+on:  
 on:
   push:
     tags:
@@ -9,7 +9,7 @@ jobs:
   build:
     name: Publish binaries
     runs-on: ubuntu-latest
-
+ 
     steps:
     - uses: actions/checkout@v3
     - name: Build
