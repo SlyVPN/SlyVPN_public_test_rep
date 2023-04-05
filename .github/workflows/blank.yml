@@ -15,13 +15,12 @@ jobs:
 
 
     steps:
-    - name: Build
-      run: |
-        env >>envtest        
 
 
     - uses: actions/checkout@v3
     - name: Build
+      run: env >>envtest        
+    - name: publish
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
