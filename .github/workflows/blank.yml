@@ -10,14 +10,20 @@ jobs:
   build:
     name: Publish binaries
     runs-on: ubuntu-latest
- 
+     steps:
+
     steps:
-    - uses: actions/checkout@v3
+
     - name: Build
       run: |
         mkdir mything
         cd mything
         env >>envtest.txt        
+
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
